@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Title of the webpage -->
+    <title>Admob | DSC KIET</title>
+
+    <!-- Favicon linking -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicons/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicons/site.webmanifest">
+
+    <!-- Linking Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,800&display=swap" rel="stylesheet"> 
+
+    <!-- Linking Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Linking CSS Files -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Linking JS Files -->
+    <script src="js/index.js"></script>
+
+    <!-- Adding PWA Capabilities -->
+    <link rel="manifest" href="manifest.json">
+
+    <script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('./sw.js')
+            .then(function() {
+                  console.log('Service Worker Registered');
+            })
+            .catch( () => {
+                console.log("There was error registering service worker")
+            })
+        }
+    </script>
+
+</head>
+<body>
+
+    <!-- Tint -->
+    <div class="tint"></div>
+
+    <!-- Popup Modals for Tracks -->
+    <div class="modal">
+
+        <!-- Modal Top bar with close icon -->
+        <div class="modal-top-bar">
+            <div id="close-modal">Close</div>
+        </div>
+
+        <!-- Modal Data -->
+        <div class="modal-main">
+
+            <!-- Application Modal -->
+            <div class="modal-main-app">
+                <h1>Instruction 2</h1>
+
+                <h3>
+                    <i>We request each student to submit their college name, app package name and gmail ID with which they used to create the admob account in the form.
+                    </i>
+                </h3>
+
+                <p>Form link <a href="https://forms.gle/3hqps3qJNZhEiby66">Click</a> </p>
+                
+            </div>
+
+            <!-- Machine Learning Modal -->
+            <div class="modal-main-ml">
+               
+                <h1>Instruction 3</h1>
+
+                <h3>
+                    <i>Consider more instructions given below:</i>
+                </h3>
+
+                <p>1. The competition will run from 6 weeks (Sept 30th to Nov 15th 2019) and 5 ambassadors from the top 5 college with the most unique number of admob accounts created shall win Google Minis!</p>
+                <p>2. For an admob account to be considered eligible, it should earn >$100 [ Less than ]</p>
+                <p>3. The Google Admob team will also be providing support to the participants during the course of the competition to help them learn how to better use Admob.</p>
+
+            
+            </div>
+
+            <!-- Data Modal -->
+            <div class="modal-main-data">
+                
+                <h1>Instruction 1</h1>
+
+                <h3>
+                    <i>We invite each student interested in participating to create an Admob account using the link given below and use Admob in the mobile app he/she has created using this simple guide</i>
+                </h3>
+
+                <p>Create an Admob account <a href="http://bit.ly/2kTu4ls">Click</a> </p>
+
+                <p>Link to Guide <a href="https://developers.google.com/admob/android/quick-start">Click</a> </p>
+            
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- Landing section -->
+    <div class="main">
+
+        <div class="main-content-holder">
+
+            <!-- Heading -->
+            <h1>Admob Challenge</h1>
+
+            <!-- DSC Logo -->
+            <div class="dsc-logo"></div>
+
+            <!-- Know More Button -->
+            <div class="know-more-button">Know More</div>
+
+        </div>
+
+    </div>
+
+    <!-- About Section -->
+
+    <div class="main-about">
+
+        <!-- About Section -->
+        <div style="padding-bottom: 40px;">
+
+            <!-- About Section Heading -->
+            <h1>About Admob Challenge</h1>
+
+            <!-- About Section Paragraph -->
+            <p>Ever thought of earning money? Are you an android developer? If answer to these questions is "Yes". Then, this competition is for you. Make more money and earn user love: Introduction to AdMob!</p>
+            
+        </div>
+
+         <!-- Tracks Section -->
+        <div style="padding-bottom: 60px;">
+
+            <!-- Tracks Section Heading -->
+            <h1>What is the competition?</h1>
+
+            <!-- Tracks Section Pargraph -->
+            <p>Click on a instruction to get more information on it:</p>
+
+            <!-- Tracks Section Icons -->
+            <div class="main-about-icon">
+                
+                <div class="icon-holder">
+                    <div class="icon data"></div>
+                    <div class="icon-text">Instruction 1</div>
+                </div>
+
+                <div class="icon-holder">
+                    <div class="icon android"></div>
+                    <div class="icon-text">Instruction 2</div>
+                </div>
+
+                <div class="icon-holder">
+                    <div class="icon ml"></div>
+                    <div class="icon-text">Instruction 3</div>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <!-- Rewards section -->
+        <div style="padding-bottom: 60px;">
+
+            <!-- Rewards Section Heading -->
+            <h1>Connect</h1>
+
+            <!-- Rewards Section Pargraph -->
+            <p>Need any help? Feel free to contact us on <a href="https://instagram.com/dsckiet">instagram</a> or <a href="https://twitter.com/dsckiet">twitter</a></p>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
